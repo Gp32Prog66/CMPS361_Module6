@@ -3,7 +3,79 @@
     width: 20%;
 }
 
+body 
+{
+background-color: #6c6633;
+}
+
 h1
 {
     color: orange;
+}
+
+/* Styling the Tables */
+
+table {
+    border-collapse:initial;
+    margin-block:initial;
+    width: auto;
+}
+
+table, th, td {
+    border-color: brown;
+    border: 2px dotted #E9CB76;
+}
+
+th, td {
+    padding: 14px;
+    size: 14px;
+}
+
+th {
+    cursor: pointer;
+    background-color: #833A21
+}
+
+th a {
+    color: black;
+    text-decoration-style:wavy;
+}
+
+th a:hover {
+    color: blue;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: yellow;
+}
+
+tbody tr:hover {
+    background-color: cornsilk;
+}
+
+/* Pagination Characteristics */
+
+.pagination {
+    margin-bottom: 30px;
+    text-decoration:double;
+}
+
+.pagination a {
+    margin: 0 8px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    background-color: blue;
+}
+
+.pagination a:hover {
+    background-color: blue;
+}
+
+.total-records {
+    margin-top: 20px;
+    font-weight:bolder;
 }
