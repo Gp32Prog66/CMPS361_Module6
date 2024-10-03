@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" type="text/css" href="styles.css">
-<script src="./js/searchTable.js"></script>
+<script src="searchTable.js"></script>
+<script src="./javascript/script.js"></script>
 <title>Assignment 6</title>
 
 <div class="center">
@@ -16,10 +17,6 @@
 
     <?php
     $API_URL = "http://localhost:8006/api/v1/selection";
-
- 
-   
-    
 
     //Fetching Data
     $response = file_get_contents($API_URL);
@@ -88,7 +85,7 @@
 
         //Basic HTML GridVieww
         echo "<table id='dataGrid'>";
-        echo "<table border='1' cellpadding='10'>";
+        //echo "<table border='1' cellpadding='10'>";
         echo "<thead>";
 
         echo "<tr>";
