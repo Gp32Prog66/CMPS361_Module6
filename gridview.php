@@ -8,10 +8,17 @@
 
 <h1>Music Selection</h1>
 
+<div class = "button">
+
+<button class = "button" onclick="window.print()">Print Records On Screen </button>
+
+</div>
+
     <?php
     $API_URL = "http://localhost:8006/api/v1/selection";
 
-    //Adding CSS
+ 
+   
     
 
     //Fetching Data
