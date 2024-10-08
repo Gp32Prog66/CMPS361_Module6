@@ -1,5 +1,8 @@
+//alert("Test Script File Works");
+
 function searchTable()
 {
+    
     //Declaring Variables
     var input, filter, table, tr, td, i, j, txtValue;
 
@@ -7,15 +10,15 @@ function searchTable()
     filter = input.value.toLowerCase();
     table = document.getElementById("dataGrid");
 
-    tr = table.getElementByTagname("tr");
+    tr = table.getElementsByTagName("tr");
 
     //Loop
-    for (var i = 1; i < tr.length; i++) //Starts at 1 to skip header
+    for (i = 1; i < tr.length; i++) //Starts at 1 to skip header
     {
         tr[i].style.display = "none"; //Hide rows initially
-        td = tr[i].getElementByTagname("td");
+        td = tr[i].getElementsByTagName("td");
 
-        for (var j = 0; j < td.length; j++) //Looping Each Cell in the Row
+        for (j = 0; j < td.length; j++) //Looping Each Cell in the Row
         {
             if (td[j])
             {
